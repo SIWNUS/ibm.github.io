@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Donor Register</title>
+
+    <!-- bootstrap csscdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--css stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- font styles cdn-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- bootstrap navbar-->
+    <!--navbar ends -->
+    <!-- Login form -->
+    <div class="login text-center mt-5">
+
+        <form action="/register-recipient" method="post">
+            <h2 class="form-text-h2"> Recipient Register Form </h2>
+            <div class="msg">{{ msg }}</div>
+            <div><input type="text" name="Name" data-name="Name" placeholder="Organisation Name" id="Name" required></div>
+            <div><input type="email" name="email" data-name="email" placeholder="Organisation mail id" id="email" required></div>
+            <div><input type="password" name="password" data-name="password" placeholder="Password" id="password" required></div>
+            <div><input type="textarea" name="Address" data-name="Address" placeholder="Your organisation address" id="Address" required></div>
+            <div><input type="tel" name="phone" data-name="phone" placeholder="Phone Number" id="phone" required=""></div>
+            <button type="submit" id="button" class="btnbtn-primary"> Register </button>
+            <div class="note mt-3 text-center">
+                <!--Register form -->
+                <p> already have an account ? please <a href="login2">login! </a></p>
+
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

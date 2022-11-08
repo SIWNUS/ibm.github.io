@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Donor Register</title>
+
+    <!-- bootstrap csscdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--css stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- font styles cdn-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- bootstrap navbar-->
+    <!--navbar ends -->
+    <!-- Login form -->
+    <a href="index.html" class="navbar-brand-2 w-nav-brand">
+        <div class="logo">PLASMA+</div>
+    </a>
+    <div class="login text-center mt-5">
+
+        <form action="/register-donor" method="post">
+            <h2 class="form-text-h2"> Register Form </h2>
+            <div class="msg">{{ msg }}</div>
+            <label id="lbl">Full Name</label>
+            <input type="text" class="form-control" name="Fullname" placeholder="Enter Your Fullname" id="Fullname"
+                required>
+            <label id="lbl">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter Your Password" id="password"
+                required>
+            <label id="lbl">E-Mail</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter Your Email ID" id="email" required>
+            <label id="lbl">Date Of Birth</label>
+            <input type="date" class="form-control" name="DOB" placeholder="Enter your Date of birth: DD-MM-YYYY" id="DOB" required>
+            <label for="Gender" id="lbl">Choose Your Gender:</label>
+            <select id="Gender" name="Gender" data-name="Gender" required="" class="form-control">
+                <option value="Select one" disabled>Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option></select>
+            <label id="lbl">Blood Group</label>
+            <input type="text" class="form-control" name="BloodGroup" placeholder="Enter Your Blood Group. for ex: B+ve" id="Blood-Group" required>
+            <label id="lbl">State</label>
+            <input type="text" class="form-control" name="State" placeholder="Enter Your State. for ex: Kerala" id="State" required>
+            <label id="lbl">Pin</label>
+            <input type="number" class="form-control" name="Pin" placeholder="Enter Your Pincode. for Ex: 123456" id="Pin" required>
+            <label id="lbl">Phone Number</label>
+            <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone Number. For ex: +91123456789" id="phone" required>
+            <label id="lbl">Health Issues (if any)</label>
+            <input type="text" class="form-control" name="Issues" placeholder="Ex: I have Anaemia or Cold or I suffered from Corona" id="Issues">
+            <button type="submit" id="button" class="btnbtn-primary"> Register </button>
+            <div class="note mt-3 text-center">
+                <!--Register form -->
+                <p> already have an account ? please <a href="login">login! </a></p>
+
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
