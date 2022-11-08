@@ -1,0 +1,30 @@
+body, html{
+    height: 100%;
+
+}
+* {
+box-sizing: border-box;
+background-color: aquamarine;
+}
+
+.border {
+   
+   
+    margin: auto;
+    
+    
+}
+.btn{
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 2px solid #4c4c4c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.word{
+    border-radius: 15px 50px 30px;
+    background: pink;
+    width: 200px;
+    
+   
+}
